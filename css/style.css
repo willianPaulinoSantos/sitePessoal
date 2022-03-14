@@ -1,9 +1,14 @@
+
+
+
 header {
-    padding: 2rem;
+    padding: 2rem 6rem;
 }
+
 
 .cabecalho-principal{
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .cabecalho-nome{
@@ -13,13 +18,24 @@ header {
 .cabecalho-nav {
     display: inline-block;  
     width: 500px;
-    margin-left: 30%;
+    margin-left: 35%;
+    padding-left: 5.7em;
+
     justify-content: space-between;
+    text-align: justify;
+
+    font-size: 0.8rem;
 }
 
 .cabecalho-lista{
     display: inline-block;
     margin-left: 1.5rem;
+}
+
+.cabecalho-secundario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .cabecalho-descricao {
@@ -30,11 +46,39 @@ header {
 }
 
 .cabecalho-titulo{
-    font-size: 2rem;
+    color: var(--cinza-escuro);
+    font-size: 2.2rem;
+    font-weight: 700;
     padding: 1rem 0;
 }
 
+.cabecalho-apresentacao{
+    padding: 1rem 0;
+    line-height: 1.3rem;
+}
+
 .cabecalho-foto{
-    width: 15%;
+    width: 20%;
     border-radius: 50px;
+}
+
+.cabecalho-social{
+    display: inline-block;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.cabecalho-social_lista{
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.cabecalho-icone_social{
+    width: 2rem;
+    transition: 0.5s all;
+    
+}
+
+.cabecalho-icone_social:hover{
+    transform: scale(1.4);
 }
