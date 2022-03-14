@@ -1,0 +1,40 @@
+header {
+    padding: 2rem;
+}
+
+.cabecalho-principal{
+    margin-bottom: 3rem;
+}
+
+.cabecalho-nome{
+    display: inline-block;
+}
+
+.cabecalho-nav {
+    display: inline-block;  
+    width: 500px;
+    margin-left: 30%;
+    justify-content: space-between;
+}
+
+.cabecalho-lista{
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+
+.cabecalho-descricao {
+    width: 70%;
+    display: inline-block;
+    justify-content: space-between;
+    vertical-align: top;
+}
+
+.cabecalho-titulo{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.cabecalho-foto{
+    width: 15%;
+    border-radius: 50px;
+}
