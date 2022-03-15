@@ -1,6 +1,8 @@
 header{
     padding-bottom: 2vw;
     padding: 2vw 10vw;
+    background-color: var(--branco-leve);
+
 }
 
 .cabecalho-principal{
@@ -109,4 +111,43 @@ header{
 
 .sobre-descricao_1{
     margin-bottom: 2.5rem;
+}
+
+/*Seção Skills-Hobbies =====================================================================*/
+
+#skills-hobbies{
+    background-color: var(--branco-leve);
+    padding: 3vw 0;
+}
+
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10vw 4vw 10vw;
+}
+
+.skills-titulo{
+    text-align: center;
+}
+
+.skills-figure{
+    display: inline-block;
+    width: 14vw;
+    height: 12vw;
+    background-color: #FFFFFF;
+}
+
+.skills-icone{
+    position: relative;
+    top: 7vw;
+    padding-left: 1vw;
+}
+
+.skills-texto{
+    position: relative;
+    top: 8vw;
+    padding-left: 1vw;
+    padding-bottom: 2vw;
 }
