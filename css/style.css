@@ -1,25 +1,24 @@
-
-
-
-header {
-    padding: 2rem 6rem;
+header{
+    padding-bottom: 2vw;
+    padding: 2vw 10vw;
 }
-
 
 .cabecalho-principal{
     margin-bottom: 3rem;
     width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .cabecalho-nome{
     display: inline-block;
 }
 
-.cabecalho-nav {
-    display: inline-block;  
+.cabecalho-nav { 
     width: 500px;
-    margin-left: 35%;
-    padding-left: 5.7em;
+    float: right;
 
     justify-content: space-between;
     text-align: justify;
@@ -30,6 +29,11 @@ header {
 .cabecalho-lista{
     display: inline-block;
     margin-left: 1.5rem;
+}
+
+.cabecalho-lista a {
+    text-decoration: none;
+    color: black;
 }
 
 .cabecalho-secundario{
@@ -59,7 +63,7 @@ header {
 
 .cabecalho-foto{
     width: 20%;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 .cabecalho-social{
@@ -81,4 +85,28 @@ header {
 
 .cabecalho-icone_social:hover{
     transform: scale(1.4);
+}
+
+/* Seção Sobre mim ==================================================================================*/
+
+#sobre-mim{
+    background-color: var(--azul-claro);
+}
+
+.sobre-mim{
+    width: 60vw;
+    padding: 10vh 10vw;
+    line-height: 1.5rem;
+}
+
+.titulo-secao{
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 5rem;
+
+    color: var(--cinza-escuro);
+}
+
+.sobre-descricao_1{
+    margin-bottom: 2.5rem;
 }
