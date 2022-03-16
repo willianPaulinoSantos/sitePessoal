@@ -151,3 +151,44 @@ header{
     padding-left: 1vw;
     padding-bottom: 2vw;
 }
+
+
+/*Seção Formações acadêmicas e complementares =====================================================*/
+
+#formacoes-cursos{
+    background-color: var(--azul-claro);
+}
+
+.formacoes-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 10vw 8vw 10vw;
+}
+
+.formacoes-titulo{
+    padding-top: 3vw;
+    text-align: center;
+}
+
+.formacao-fig{
+    background-color: #FFF;
+    width: 18vw;
+    height: 17vw;
+    text-align: center;
+}
+
+.formacao-img{
+    padding-top: 5vw;
+    width: 12vw;
+}
+
+.formacao-desc{
+    font-weight: bold;
+    color: var(--cinza-escuro);
+    padding: 1vw 0 1.5vw 0;
+}
+
+.formacao-instituto{
+    font-size: 0.8rem;
+}
