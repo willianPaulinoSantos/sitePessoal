@@ -10,15 +10,14 @@ class Contatante {
         erros = [];
         let digitos = /\d/g;
         let procuraDigitos = this.nome.match(digitos);
-
         if(this.nome.length == 0){
             erros.push('Por favor, insira seu nome');
         }
-
+        
         if(this.nome.length > 50){
             erros.push('Excedeu o número de caracteres');
         }
-
+        
         if(procuraDigitos !== null && procuraDigitos.length !== 0){
                 erros.push('Não digite números nesse campo');
         }
@@ -34,20 +33,14 @@ let campoAssunto = document.querySelector('.assunto');
 let campoMensagem = document.querySelector('.mensagem');
 let btnForm = document.querySelector('.form-btn_enviar')
 let form = document.querySelector('form');
-let i = 0;
+let contatantes = [];
 
 
 btnForm.addEventListener('click', function(form){
-    form.preventDefault(); 
-    const novoContatante = new Contatante(campoNome.value, campoEmail.value, campoAssunto.value, campoMensagem.value);
-   // console.log(novoContatante.nome);
-    novoContatante.validaNome();
+form.preventDefault(); 
+const novoContatante = new Contatante(campoNome.value, campoEmail.value, campoAssunto.value, campoMensagem.value);
+console.log(novoContatante);
+contatantes.push(Object.values(novoContatante));
+novoContatante.validaNome();
+console.log(contatantes);
 });
-
-
-function validaNome(){
-    console.log(this.nome.length)
-        if(this.nome.length > 50){
-            console.log('Excedeu o número de caracteres');
-        }
-}
