@@ -299,11 +299,14 @@ header{
 }
 
 .contato-img{
-    height: 80vh;
+    height: 40rem;
 }
 
 .contato-titulo{
-    padding-top: 0;
+    font-weight: bold;
+    color: var(--cinza-escuro);
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .contato-descricao{
@@ -313,12 +316,13 @@ header{
 
 .contato-campos{
     vertical-align: top;
+    padding-left: 2rem;
 }
 
 .contato-campo{
     background-color: #FFF;
     height: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     padding: 0.5rem;
     border-radius: 5px;
 }
@@ -346,4 +350,28 @@ header{
 
 .contato-email:hover + .contato-nome{
     color: var(--azul);
+}
+
+
+.assunto{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.mensagem{
+    width: 100%;
+    height: 6rem;
+    border: none;
+    padding-bottom: 2rem;
+}
+
+.form-btn_enviar{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--azul);
+    color: #FFF;
 }
