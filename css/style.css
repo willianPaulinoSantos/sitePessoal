@@ -282,3 +282,68 @@ header{
     transform: scale(1.1);
     cursor: pointer;
 }
+
+
+
+/*Seção de Contato ===============================================================================*/
+
+#contato{
+    background-color: var(--azul-claro);
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6vw 10vw 3vw 10vw;
+}
+
+.contato-img{
+    height: 80vh;
+}
+
+.contato-titulo{
+    padding-top: 0;
+}
+
+.contato-descricao{
+    padding-bottom: 2vw;
+    line-height: 1.5rem;
+}
+
+.contato-campos{
+    vertical-align: top;
+}
+
+.contato-campo{
+    background-color: #FFF;
+    height: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.contato-campo:focus{
+    border-bottom: 1px solid var(--azul);
+}
+
+.campo{
+    display: block;
+}
+
+.contato-nome, .contato-email{
+    width: 98.5%;
+    height: 55%;
+    border: none;
+}
+
+
+.contato-nome:focus, .contato-email:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.contato-email:hover + .contato-nome{
+    color: var(--azul);
+}
