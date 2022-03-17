@@ -16,12 +16,12 @@
                 <h1 class="cabecalho-nome">Willian Paulino</h1>
                 <nav class="cabecalho-nav">
                     <ul>
-                        <li class="cabecalho-lista"><a class="menu" href="#sobre-mim">Sobre mim</a> </li>
-                        <li class="cabecalho-lista"><a class="menu" href="#skills-hobbies">Skills</a></li>
-                        <li class="cabecalho-lista"><a class="menu" href="#skills-hobbies">Hobbies</a></li>
-                        <li class="cabecalho-lista"><a class="menu" href="#formacoes-cursos">Formação</a></li>
-                        <li class="cabecalho-lista"><a class="menu" href="#projetos">Projetos</a></li>
-                        <li class="cabecalho-lista"><a class="menu" href="#contato">Contato</a></li>
+                        <li class="cabecalho-lista"><a href="#sobre-mim">Sobre mim</a> </li>
+                        <li class="cabecalho-lista"><a href="#skills-hobbies">Skills</a></li>
+                        <li class="cabecalho-lista"><a href="#skills-hobbies">Hobbies</a></li>
+                        <li class="cabecalho-lista"><a href="#formacoes-cursos">Formação</a></li>
+                        <li class="cabecalho-lista"><a href="#projetos">Projetos</a></li>
+                        <li class="cabecalho-lista"><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -82,7 +82,7 @@
                         <p class="skills-texto">CSS3</p>
                     </figure>
                     <figure class="skills-figure">
-                        <img class="skills-icone" alt="ícone do JavaScript" src="./img/js.svg">
+                        <img class="skills-icone" alt="ícone do JavaScript src="./img/js.svg">
                         <p class="skills-texto">JavaScript</p>
                     </figure>
                     <figure class="skills-figure">
@@ -203,33 +203,29 @@
             </section>
             <section id="contato">
                 <div class="contato">
-                    <img class="contato-img" alt="imagem de um telefone antigo, preto, esticado sobre uma mesa longa." src="./img/telefone.png">
+                    <img class="contato-img" alt="imagem de um telefona antigo, preto, esticado sobre uma mesa longa." src="./img/telefone.png">
                     <div class="contato-campos">
-                        <h2 class="contato-titulo">Contato</h2>
+                        <h2 class="contato-titulo">Contatos</h2>
                         <p class="contato-descricao">Quer entrar em contato comigo? <br>Preencha o formulário a seguir e entrarei em contato o mais rápido possível</p>
                         <form id="contato-infos">
                             <figure class="contato-campo">
-                                <label for="contato-nome" class="campo-nome">Nome</label>
+                                <label for="contato-nome">Nome</label>
                                 <input type="text" class="contato-nome campo" required>
                             </figure>
                             <figure class="contato-campo">
-                                <label for="contato-email" class="campo-nome">E-mail</label>
-                                <input type="email" class="contato-email campo">
+                                <label for="contato-email">E-mail</label>
+                                <input type="email" class="contato-email campo" required>
                             </figure>
-                            <textarea class="campo assunto" placeholder="Assunto"></textarea>
-                            <textarea class="campo mensagem"  placeholder="Mensagem"></textarea>  
+                            <textarea class="campo assunto" required placeholder="Assunto"></textarea>
+                            <textarea class="campo mensagem" required placeholder="Mensagem"></textarea>  
                             <input type="submit" value="Enviar Mensagem" class="campo form-btn_enviar">
                         </form>
                     </div>
                 </div>
             </section>
-            <script src="./js/script.js"></script>
         </main>
         <footer>
-            <div class="rodape">
-                <p class="credito">Desenvolvido por Willian Paulino</p>
-                <p class="credito">2022</p>
-            </div>
+
         </footer>
 
     </body>
