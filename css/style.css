@@ -38,6 +38,10 @@ header{
     color: black;
 }
 
+.menu{
+    transition: all 5s;
+}
+
 .cabecalho-secundario{
     display: flex;
     flex-direction: row;
@@ -352,6 +356,9 @@ header{
     color: var(--azul);
 }
 
+.campo-nome{
+    color: rgba(71, 64, 64, 0.5);
+}
 
 .assunto{
     width: 100%;
@@ -374,4 +381,19 @@ header{
     height: 3rem;
     background-color: var(--azul);
     color: #FFF;
+}
+
+
+/*Seção rodapé =============================================================================*/
+
+
+.rodape{
+    width: 20rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.credito{
+    padding-bottom: 1rem;
 }
