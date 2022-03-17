@@ -1,46 +1,108 @@
-class Contatante {
-    constructor(nome, email, assunto, mensagem){
-        this.nome = nome;
-        this.email = email;
-        this.assunto = assunto;
-        this.mensagem = mensagem;
-    }
+let contatantes = [];
+let form = document.querySelector('#contato-infos');
 
-    validaNome(){
-        erros = [];
-        let digitos = /\d/g;
-        let procuraDigitos = this.nome.match(digitos);
-        if(this.nome.length == 0){
-            erros.push('Por favor, insira seu nome');
+
+
+
+configuraBotaoEnviar();
+
+
+
+
+function configuraBotaoEnviar(){
+
+    let btnForm = document.querySelector('.form-btn_enviar');
+    
+    btnForm.addEventListener('click', function(event){
+        event.preventDefault();
+        let dadosContatante = obtemDadosDoFormulario(form);
+        if(typeof(dadosContatante) == 'object'){
+            contatantes.push(dadosContatante);
         }
-        
-        if(this.nome.length > 50){
-            erros.push('Excedeu o número de caracteres');
-        }
-        
-        if(procuraDigitos !== null && procuraDigitos.length !== 0){
-                erros.push('Não digite números nesse campo');
-        }
-        console.log(erros);
-    }
+        console.log(contatantes);
+    });
 }
 
-let erros = [];
+function obtemDadosDoFormulario(form){
+    let contatante = {
+        nome: form.nome.value,
+        email: form.email.value,
+        assunto: form.assunto.value,
+        mensagem: form.mensagem.value
+    }
+   let valido = validaContatante(contatante);
 
-let campoNome = document.querySelector('.contato-nome');
-let campoEmail = document.querySelector('.contato-email');
-let campoAssunto = document.querySelector('.assunto');
-let campoMensagem = document.querySelector('.mensagem');
-let btnForm = document.querySelector('.form-btn_enviar')
-let form = document.querySelector('form');
-let contatantes = [];
+   if(!valido){
+       return 0;
+   }
+    return contatante;
+}
+
+function validaContatante(contatante){
+
+    let contatanteValido = false;
+    let nomeValido = validaNome(contatante);
+    let emailValido = validaEmail(contatante);
+
+    if(nomeValido && emailValido){
+        contatanteValido = true;
+    }
+    return contatanteValido;
+}
 
 
-btnForm.addEventListener('click', function(form){
-form.preventDefault(); 
-const novoContatante = new Contatante(campoNome.value, campoEmail.value, campoAssunto.value, campoMensagem.value);
-console.log(novoContatante);
-contatantes.push(Object.values(novoContatante));
-novoContatante.validaNome();
-console.log(contatantes);
-});
+function validaNome(contatante){
+    let valido = true;
+    let errosNome = [];
+
+    if(contatante.nome.length == 0){
+        errosNome.push("Por favor, insira seu nome");
+        valido = false;
+        console.log(errosNome);
+        return valido;
+    }
+
+    if(contatante.nome.length > 50){
+        errosNome.push("Excedeu o número de caracteres (máx 50 caracteres)");
+        valido = false;
+    }
+
+    let digitos = /\d/g;
+    let procuraDig = contatante.nome.match(digitos);
+
+    if(procuraDig !== null && procuraDig.length > 0){
+        errosNome.push("Por favor, não insira números");
+        valido = false;
+    }
+
+    console.log(`errosNome = ${errosNome}`);
+    
+    return valido;
+}
+
+function validaEmail(contatante){
+    let errosEmail = [];
+    let emailValido = true;
+    const marcadorEmail = /\w+\w+\w+@+\w+\w+\w\.+\w+\w+\w/g
+    let checaMarcador = contatante.email.match(marcadorEmail);
+
+    if(contatante.email.length == 0){
+        errosEmail.push("Por favor, insira seu e-mail");
+        console.log(errosEmail);
+        emailValido = false;
+        return emailValido;
+    }
+
+    if(contatante.email[0] == contatante.email[0].toUpperCase()){
+        errosEmail.push("Por favor, comece com letra minúscula o endereço de e-mail");
+        emailValido = false;
+    }
+
+    if(checaMarcador == null){
+        errosEmail.push("E-mail inválido, siga esse modelo: text@texto.com");
+        emailValido = false;
+    }
+
+    console.log(errosEmail);
+    return emailValido;
+}
