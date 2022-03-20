@@ -13,22 +13,22 @@
     <body>
         <header>
             <div class="cabecalho-principal">
-                <h1 class="cabecalho-nome">Willian Paulino</h1>
-                <nav class="cabecalho-nav">
+                <h1 class="cabecalho__nome">Willian Paulino</h1>
+                <nav class="cabecalho__nav">
                     <ul>
-                        <li class="cabecalho-lista"><a class="menu" href="#sobre-mim">Sobre mim</a> </li>
-                        <li class="cabecalho-lista"><a class="menu" href="#skills-hobbies">Skills</a></li>
-                        <li class="cabecalho-lista"><a class="menu" href="#skills-hobbies">Hobbies</a></li>
-                        <li class="cabecalho-lista"><a class="menu" href="#formacoes-cursos">Formação</a></li>
-                        <li class="cabecalho-lista"><a class="menu" href="#projetos">Projetos</a></li>
-                        <li class="cabecalho-lista"><a class="menu" href="#contato">Contato</a></li>
+                        <li class="cabecalho__lista"><a class="cabecalho__link-interno" href="#sobre-mim">Sobre mim</a> </li>
+                        <li class="cabecalho__lista"><a class="cabecalho__link-interno" href="#skills-hobbies">Skills</a></li>
+                        <li class="cabecalho__lista"><a class="cabecalho__link-interno" href="#skills-hobbies">Hobbies</a></li>
+                        <li class="cabecalho__lista"><a class="cabecalho__link-interno" href="#formacoes-cursos">Formação</a></li>
+                        <li class="cabecalho__lista"><a class="cabecalho__link-interno" href="#projetos">Projetos</a></li>
+                        <li class="cabecalho__lista"><a class="cabecalho__link-interno" href="#contato">Contato</a></li>
                     </ul>
                 </nav>
             </div>
             <sect class="cabecalho-secundario">
                 <div class="cabecalho-descricao">
-                    <h2 class="cabecalho-titulo"''>Olá, me chamo Willian Paulino e sou desenvolvedor Front-end</h2>
-                    <h3 class="cabecalho-apresentacao">Apaixonado por tecnologia, educação e pessoas.</h3>
+                    <h2 class="cabecalho__titulo">Olá, me chamo Willian Paulino e sou desenvolvedor Front-end</h2>
+                    <h3 class="cabecalho__apresentacao">Apaixonado por tecnologia, educação e pessoas.</h3>
                     <ul class="cabecalho-social">
                         <a class="cabecalho-social_lista"href="https://github.com/willianPaulinoSantos">
                             <li>
@@ -208,15 +208,9 @@
                         <h2 class="contato-titulo">Contato</h2>
                         <p class="contato-descricao">Quer entrar em contato comigo? Preencha o formulário a seguir e entrarei em contato o mais rápido possível</p>
                         <form id="contato-infos">
-                            <!--<figure class="contato-campo nome"> -->
-                                <label for="contato-nome" class="campo-nome">Nome</label>
-                                <input type="text" id="nome" class="contato-nome campo" required>
-                                <ul id="erros-nome"></ul> 
-                            </figure>
-                            <figure class="contato-campo email">
-                                <label for="contato-email" class="campo-nome">E-mail</label>
-                                <input type="email" id="email" class="contato-email campo">
-                            </figure>
+                            <input type="text" id="nome" name="nome" class="contato-nome campo" placeholder="Nome"required>
+                            <ul id="erros-nome"></ul> 
+                            <input type="email" id="email" name="E-mail" placeholder="E-mail" class="contato-email campo">
                             <textarea class="campo assunto" id="assunto" placeholder="Assunto"></textarea>
                             <textarea class="campo mensagem" id="mensagem" placeholder="Mensagem"></textarea>  
                             <input type="submit" value="Enviar Mensagem" class="campo form-btn_enviar">
