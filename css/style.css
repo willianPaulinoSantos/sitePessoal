@@ -32,6 +32,9 @@ header .cabecalho-principal{
             display: inline-block;
             margin-left: 1.5rem;
         }
+        .cabecalho__nav  .cabecalho__lista:hover{
+            transform: scale(1.2);
+        }
 
             .cabecalho__lista .cabecalho__link-interno {
                 text-decoration: none;

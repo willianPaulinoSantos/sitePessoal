@@ -1,7 +1,6 @@
 let contatantes = [];
 let form = document.querySelector('#contato-infos');
-
-
+let errosEmail;
 
 
 configuraBotaoEnviar();
@@ -53,7 +52,7 @@ function validaContatante(contatante){
 
 function validaNome(contatante){
     let valido = true;
-    let errosNome = [];
+    errosNome = [];
 
     if(contatante.nome.length == 0){
         errosNome.push("Por favor, insira seu nome");
@@ -81,7 +80,7 @@ function validaNome(contatante){
 }
 
 function validaEmail(contatante){
-    let errosEmail = [];
+    errosEmail = [];
     let emailValido = true;
     const marcadorEmail = /\w+\w+\w+@+\w+\w+\w\.+\w+\w+\w/g
     let checaMarcador = contatante.email.match(marcadorEmail);
@@ -103,6 +102,30 @@ function validaEmail(contatante){
         emailValido = false;
     }
 
+    checaCaracteresEspeciais(contatante.email, errosEmail);
+
     console.log(errosEmail);
     return emailValido;
+}
+
+function checaCaracteresEspeciais(email, errosEmail){
+    let indexArroba = email.indexOf("@");
+    console.log(`indexArroba = ${indexArroba}`);
+    let estruturaCaract = /\W/g;
+    let procuraCaract;
+    console.log(`Procura Caracteres Especiais  = ${procuraCaract}`);
+
+    
+
+    procuraCaract = [];
+    procuraCaract = email.match(estruturaCaract);
+    let indexCaract = email.indexOf(procuraCaract);
+    console.log(`indexCaract = ${indexCaract}`);
+
+    if (procuraCaract !== "." && procuraCaract !== "@" && indexArroba > indexCaract){
+        errosEmail.push("Erro no envio: caracteres especiais no nome de usuario do e-mail.");
+    }
+    if (procuraCaract !== "." && procuraCaract !== "@" && indexArroba < indexCaract) {
+        errosEmail.push("Erro no envio: caracteres especiais no domínio do e-mail.");
+    }
 }
