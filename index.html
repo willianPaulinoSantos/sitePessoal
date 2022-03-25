@@ -210,11 +210,16 @@
                         <form id="contato-infos">
                             <input type="text" id="nome" name="nome" class="contato-nome campo" placeholder="Nome"required>
                             <ul id="erros-nome"></ul> 
-                            <input type="email" id="email" name="E-mail" placeholder="E-mail" class="contato-email campo">
+                            <input type="email" id="email" name="email" placeholder="E-mail" class="contato-email campo">
                             <textarea class="campo assunto" id="assunto" placeholder="Assunto"></textarea>
-                            <textarea class="campo mensagem" id="mensagem" placeholder="Mensagem"></textarea>  
-                            <input type="submit" value="Enviar Mensagem" class="campo form-btn_enviar">
+                            <textarea class="campo mensagem" id="mensagem" placeholder="Mensagem"></textarea> 
+                            <div class="enviaExibe">
+                                <input type="submit" value="Enviar Mensagem" class="campo form-btn_enviar">
+                                <ul class="erros"></ul>
+                            </div> 
+                            
                         </form>
+                        
                     </div>
                 </div>
             </section>

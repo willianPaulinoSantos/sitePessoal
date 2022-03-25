@@ -385,16 +385,30 @@ header .cabecalho-secundario{
 }
 
 .form-btn_enviar{
-    margin-top: 2rem;
-    width: 10rem;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    width: 8rem;
     height: 3rem;
     background-color: var(--azul);
     color: #FFF;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.erro{
+.enviaExibe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.erros{
     color: red;
-    padding-top: 1rem;
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+
+.mensagemAgradecimento{
+    color: black;
 }
 
 
