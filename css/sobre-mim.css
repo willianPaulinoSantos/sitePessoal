@@ -1,0 +1,21 @@
+#sobre-mim{
+    background-color: var(--azul-claro);
+}
+
+.sobre-mim{
+    width: 60vw;
+    padding: 10vh 10vw;
+    line-height: 1.5rem;
+}
+
+.titulo-secao{
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 5rem;
+
+    color: var(--cinza-escuro);
+}
+
+.sobre-descricao_1{
+    margin-bottom: 2.5rem;
+}

@@ -1,0 +1,73 @@
+#projetos{
+    background-color: var(--branco-leve);
+}
+
+.projetos{
+    padding: 1vw 10vw;
+}
+
+.projetos-titulo{
+    text-align: center;
+}
+
+.projeto-area{
+    padding-bottom: 4rem;
+}
+
+.projeto-img{
+    width: 70%;
+    display: inline-block;
+}
+
+.projeto-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projeto-img{
+    width: 50vw;
+}
+
+.projeto-descricao{
+    display: inline-block;
+    padding-top: 80px;
+}
+
+.projeto-nome{
+    font-weight: bold;
+    color: var(--cinza-escuro);
+    font-size: 1.2rem;
+}
+
+.projeto-fonte{
+    font-size: 0.8rem;
+}
+
+.projeto-btn_repo{
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--branco-leve);
+    color: var(--azul);
+    border: 0.5px solid var(--azul);
+}
+
+.projeto-btn_repo:hover{
+    transform: scale(1.1);
+    color: green;
+    cursor: pointer;
+}
+
+.projeto-btn_demo{
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--azul);
+    color: var(--branco-leve);
+    border: 0.5px solid var(--azul);
+    margin-left: 1vw;
+}
+
+.projeto-btn_demo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

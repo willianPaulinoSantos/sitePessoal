@@ -1,0 +1,118 @@
+#contato{
+    background-color: var(--azul-claro);
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6vw 10vw 3vw 10vw;
+}
+
+.contato-img{
+    height: 40rem;
+}
+
+.contato-titulo{
+    font-weight: bold;
+    color: var(--cinza-escuro);
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.contato-descricao{
+    padding-bottom: 2vw;
+    line-height: 1.5rem;
+}
+
+.contato-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contato-campos{
+    vertical-align: top;
+    padding-left: 2rem;
+}
+
+.contato-campo{
+    background-color: #FFF;
+    height: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.contato-campo:focus{
+    border-bottom: 1px solid var(--azul);
+}
+
+.campo{
+    display: block;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0 2rem 0.5rem;
+}
+
+.contato-nome, .contato-email{
+    width: 98.5%;
+    height: 55%;
+    border: none;
+}
+
+
+.contato-nome:focus, .contato-email:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.contato-email:hover + .contato-nome{
+    color: var(--azul);
+}
+
+.campo-nome{
+    color: rgba(71, 64, 64, 0.5);
+}
+
+.assunto{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.mensagem{
+    width: 100%;
+    height: 6rem;
+    border: none;
+    padding-bottom: 2rem;
+}
+
+.form-btn_enviar{
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--azul);
+    color: #FFF;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.enviaExibe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.erros{
+    color: red;
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+
+.mensagemAgradecimento{
+    color: black;
+}
