@@ -4,6 +4,10 @@
 
 .projetos{
     padding: 1vw 10vw;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .projetos-titulo{
@@ -31,7 +35,7 @@
 
 .projeto-descricao{
     display: inline-block;
-    padding-top: 80px;
+    padding-top: 2rem;
 }
 
 .projeto-nome{
@@ -70,4 +74,12 @@
 .projeto-btn_demo:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px){
+    .projeto-area{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
