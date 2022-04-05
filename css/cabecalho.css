@@ -50,6 +50,7 @@ header .cabecalho-principal{
 
         .cabecalho-descricao .cabecalho__titulo{
             color: var(--cinza-escuro);
+            text-align: left;
             font-size: 2.2rem;
             font-weight: 700;
             padding: 1rem 0;
@@ -83,27 +84,16 @@ header .cabecalho-principal{
     transform: scale(1.4);
 }
 
-
-
-@media screen and (max-width: 500px){
+@media screen and (min-width: 0){
     header{
         width: auto;
+        padding: 2vh 5vw;
     }
 
     header .cabecalho-secundario{
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-    }
-
-    .cabecalho-secundario .cabecalho-descricao{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px){
-    header {
-        padding: 2vw 5vw;
     }
 
     .cabecalho__nav  .cabecalho__lista{
@@ -115,8 +105,38 @@ header .cabecalho-principal{
     }
 
     .cabecalho-foto{
-        width: 20vw;
-        height: 25vw;
+        width: 30vw;
+        height: 32vw;
+        border-radius: 50%;
+    }
+
+    .cabecalho-secundario .cabecalho-descricao{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px){
+    header {
+        padding: 2vw 5vw;
+    }
+
+    header .cabecalho-secundario{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cabecalho__nav  .cabecalho__lista{
+        display: none;
+    }
+    
+    .cabecalho__nav  .cabecalho__lista:last-child{
+        display: inline-block;
+    }
+
+    .cabecalho-foto{
+        width: 30vw;
+        height: 32vw;
         border-radius: 50%;
     }
 }

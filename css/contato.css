@@ -117,14 +117,38 @@
     color: black;
 }
 
+@media screen and (min-width: 0){
+    .contato{
+        padding: 6vw 5vw 3vw 5vw;
+    }
 
+    .contato-campos{
+        padding-left: 0;
+    }
 
-@media screen and (max-width: 768px){
+    .form-btn_enviar{
+        width: 12rem;
+    }
+
+    .contato-img{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px){
     .contato{
         width: auto;
     }
 
     .contato-img{
         display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .contato-img {
+        display: inline-block;
+        height: 40rem;
+        margin-right: 3rem;
     }
 }

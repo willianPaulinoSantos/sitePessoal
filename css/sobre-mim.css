@@ -19,3 +19,14 @@
 .sobre-descricao_1{
     margin-bottom: 2.5rem;
 }
+
+
+@media screen and (max-width: 768px) {
+    .sobre-mim{
+        width: auto;
+        line-height: 1.5rem;
+        text-align: justify;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}

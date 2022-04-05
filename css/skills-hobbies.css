@@ -3,34 +3,91 @@
     padding: 3vw 0;
 }
 
-
-.skills{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 10vw 4vw 10vw;
-}
-
 .skills-titulo{
     text-align: center;
 }
 
-.skills-figure{
-    background-color: #FFFFFF;
-    display: inline-block;
-    width: 14vw;
-    height: 12vw;
+
+@media screen and (min-width: 0){
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 5vw 4vw 5vw;
+        font-family: var(--inter);
+        font-weight: bold;
+    }  
+
+    .skills-figure{
+        background-color: #FFFFFF;
+        width: 40%;
+        height: 15vw;
+        padding: 2vw;
+        margin: 4% 2%;
+        font-size: 0.8rem;
+    }
+
+    .skills-icone{
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+
+    .skills-texto{
+        padding-bottom: 5%;
+    }
 }
 
-.skills-icone{
-    padding-left: 1vw;
-    position: relative;
-    top: 7vw;
-}
+/*@media screen and (min-width: 500px){
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0 10vw 4vw 10vw;
+        font-family: var(--inter);
+        font-weight: bold;
+    }  
 
-.skills-texto{
-    padding-bottom: 2vw;
-    padding-left: 1vw;
-    position: relative;
-    top: 8vw;
+    .skills-figure{
+        background-color: #FFFFFF;
+        width: 23%;
+        height: 15vw;
+        padding: 3vw;
+        margin: 4% 2%;
+        margin-bottom: 3%;
+    }
+
+    .skills-figure:nth-child(3n){
+        margin-right: 0;
+    }
+
+    .skills-figure:nth-child(3n+1){
+        margin-left: 0;
+    }
+
+
+    .skills-icone{
+        margin-top: 47%;
+        margin-bottom: 5%;
+    }
+}*/
+
+@media screen and (min-width: 768px){
+    .skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10vw 4vw 10vw;
+    }    
+
+    .skills-figure {
+        background-color: #FFFFFF;
+        width: 12%;
+        height: 6rem;
+        padding: 2vw;
+        margin: 1% 1%;
+    }
+    .skills-icone{
+        margin-top: 40%;
+        margin-bottom: 5%;
+    }
 }

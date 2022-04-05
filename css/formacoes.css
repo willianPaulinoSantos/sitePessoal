@@ -2,13 +2,6 @@
     background-color: var(--azul-claro);
 }
 
-.formacoes-items{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1vw 10vw 8vw 10vw;
-}
-
 .formacoes-titulo{
     padding-top: 3vw;
     text-align: center;
@@ -21,9 +14,10 @@
     text-align: center;
 }
 
-.formacao-img{
-    padding-top: 5vw;
-    width: 12vw;
+.formacao-desc{
+    font-weight: bold;
+    color: var(--cinza-escuro);
+    padding: 1vw 0 1.5vw 0;
 }
 
 .imersao-img{
@@ -35,12 +29,6 @@
     padding-top: 3vw;
 }
 
-.formacao-desc{
-    font-weight: bold;
-    color: var(--cinza-escuro);
-    padding: 1vw 0 1.5vw 0;
-}
-
 .imersao-desc{
     font-size: 0.85rem;
 }
@@ -49,10 +37,65 @@
     font-size: 0.8rem;
 }
 
-
-@media screen and (max-width: 500px){
+@media screen and (min-width: 0){
     .formacoes-items{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 2vw 5vw 8vw 5vw;
+    }
+    .formacao-fig{
+        width: auto;
+        height: 9rem;
+    }
+
+    .formacao-img {
+        width: 12rem;
+        margin-top: 2rem;
+    }
+
+    .formacao-desc{
+        padding-top: 1rem;
+    }
+
+    .formacao-instituto{
+        padding-bottom: 2rem;
+    }
+
+    .unesp-img {
+        width: 7rem;
+        padding-top: 3vw;
     }
 }
+
+/*@media screen and (min-width: 500px){
+    .formacao-items{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 2vw 5vw;
+        border: solid black;
+    }
+
+    .formacao-item{
+        width: 20%;
+        margin: 0 2%;
+    }
+}*/
+
+@media screen and (min-width: 768px){
+    .formacoes-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1vw 10vw 8vw 10vw;
+    }
+
+    .formacao-img{
+        width: 12vw;
+    }
+
+    .unesp-img{
+        width: 9vw; 
+        padding-top: 1vw;
+    }
+}
+
